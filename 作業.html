@@ -1,9 +1,72 @@
-<huml>
+<html>
 <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>作業</title>
+        <style>
+        .diamond {
+            width: 50px;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 25px solid blue;
+            position: relative;
+            top: 20px;
+        }
+
+        .diamond::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top: 70px solid blue;
+            position: absolute;
+            left: -25.5px;
+            top: 24px;
+        }
+        .tree-middle{
+            width: 0;
+            height: 0;
+            border-left: 80px solid transparent;
+            border-right: 80px solid transparent;
+            border-bottom:55px solid rgb(72, 146, 72) ;
+            position: relative;
+            left: 80px;
+            top: -30px;
+        }
+        .tree-top{
+            width: 0;
+            height: 0;
+            border-left: 70px solid transparent;
+            border-right: 70px solid transparent;
+            border-bottom:60px solid rgb(99, 202, 99) ;
+            position: relative;
+            left: 90px;
+            top: -20px;
+        }
+        .christmas-tree {
+            width: 0;
+            height: 0;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            border-bottom:65px solid rgb(111, 237, 111) ;
+            position: relative;
+            left: 100px;
+        }
+        .tree-bottom{
+            width: 50px;
+            height: 100px;
+            background-color: rgb(95, 24, 24);
+            position: relative;
+            left: 135px;
+            top: -30px;
+        }
+        </style>
 </head>
 <body>
-    <div id="d1"></div>
+    <div class="diamond"></div>
+    <div class="christmas-tree"></div>
+        <div class="tree-top"></div>
+        <div class="tree-middle"></div>
+        <div class="tree-bottom"></div>
 </body>
-</huml>
+</html>
