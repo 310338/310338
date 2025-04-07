@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>
+        #mouseCanvas{
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function btnClick() {
+            alert("按鈕被按下了");
+        }
+        function btnClick(btn) {
+            alert(btn.innerHTML+"被按下了")
+        }
+        function btnClick(btn=null) {
+            btnName=(btn)?btn.innerHTML:("按鈕");
+            alert(btnName+"被攔下來了!");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="btmClicl(this);">按鈕</button>
+    <button onclick="btmClicl(this);">按鈕1</button>
+    <button onclick="btmClicl(this);">按鈕2</button>
+</body>
+</html>
