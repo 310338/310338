@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>翻牌記憶遊戲</title>
+    <meta charset="UTF-8">
+    <style>
+        #board {
+            display: grid;
+            grid: repeat(3,90px) / repeat(4,90px);
+        }
+    </style>
+    <script>
+        function gameInit(){
+            cards={};
+            var b=document.getElementById("board");
+            for(i=0;i<12;i++) {
+                var a=document.createElement("img");
+                a.className="card";
+                a.src="pic/0.png";
+                a.addEventListener("click",)
+                b.appendChild(a);
+            }
+            imgs=Array.form(document.getElementsByClassName("card"));
+        }
+        function gameStart() {
+            crash.sort((a,b)=>(Math.random()-0.5));
+            for(i=0;i<imgs.length;i++) {
+                imgs[i].src='pic/${cards[i]}.png';
+            }
+        }
+
+    </script>
+</head>
+<body onload="gameInit();">
+    <div id="board">
+        <button onlick="gameStart();">遊戲開始</button>
+    </div>
+
+</body>
+</html>
